@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Austin, Texas</title>
+	<link rel='stylesheet' href='style.css'>
+
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Russo+One" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+	<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+				
+
+</head>
+<body>
+<header>
+	<div class='main-header'>
+		<h4 class='main-description'>The Newbie's Guide To </h4>
+		<h2 class='main-heading'>Austin, Texas</h2>
+	</div>
+</header>
+
+<section class='second-header'>
+	<h2 class='second-heading sr'> Welcome To The Live Music Capital Of The World</h2>
+	<hr>
+	<p class='second-description sr'> The city of Austin was once a relatively small town that just happened to serve as the capital of the Lone Star State. But after decades of being one of the fastest growing cities in the United States, it has gradually transformed into a national tech hub filled with diverse culture and an exciting nightlife. On this page, I've listed a few must-do activities in the area.</p>
+</section>
+
+<section class='coffee'>
+	<h2 class='coffee-heading sr'> The Coffee Scene </h2>
+	<div class='coffee-description sr'>
+	<a href='http://halcyoncoffeebar.com/?location=austin' target='_blank'><p> Halcyon Coffee Bar</p></a>
+	<a href='http://www.mozartscoffee.com/' target='_blank'><p> Mozart's Coffee Roasters</p></a>
+	<a href='http://www.apanascoffee.com/' target='_blank'><p> Apana's Coffee & Beer</p></a>
+	<a href='http://woodfiredcoffee.com/' target='_blank'><p> Summermoon Coffee</p></a>
+	<a href='http://epochcoffee.com/' target='_blank'><p> Epoch Coffee Bar</p></a>
+	<a href='http://www.sorrentosdrivethru.com/' target='_blank'><p> Sorrento's Drive Thru</p></a>
+	<a href='http://joels.coffee/' target='_blank'><p> Joel's Coffee Shop</p></a>
+	<a href='http://cenoteaustin.com/home/' target='_blank'><p> Cenote Patio Cafe</p></a>
+	<a href='http://www.monkeynestcoffee.com/' target='_blank'><p> Monkey Nest Coffee</p></a>
+	<a href='http://www.houndstoothcoffee.com/' target='_blank'><p>Houndstooth Coffee</p></a>
+	</div>
+	<div class='coffee-description2 sr'>
+	<p> Coffee in Austin has always been one of the most underrated aspects of the city. They may not top Seattle's, but the coffee shops in Austin somehow manage to capture the modern yet quirky nature of the city as a whole. </p>
+	<p> Ever wanted a kick of alcohol in your mocha? Halcyon's Chocolate Espresso Martini is the only way to go. Want to impress on your next coffee date? Head on over to Mozart's Coffee Roasters for their delicious pastries and sunset view of the lake. Need a place to stay up all night to catch up on work? Epoch will make sure you're both energized and comfortable 24 hours a day. </p>
+	<p> Every major coffee shop in Austin offers at least some sort of unique experience. I've linked a few of the local coffee gems, so definitely be sure to check them out! (And if you're a chocoholic like me, do yourself a favor and go to Joel's Coffee right now. Their truffles and specialty java are to die for.)</p>
+	</div>
+</section>
+
+<section class='outdoors'>
+	<div class='outdoors-pics1'>
+
+	</div>
+	<div class='outdoors-text'>
+	</div>
+</section>
+<script>
+
+// Fade in intr
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+
+    $('.main-header').css({
+        'opacity': ((height - scrollTop) / (height))
+    }); 
+    $('.main-heading').css({
+        'opacity': ((((height - scrollTop * 1.4)) / (height)) - 0.2) 
+    }); 
+    $('.main-description').css({
+        'opacity': ((((height - scrollTop * 1.3)) / (height)) - 0.2) 
+    }); 
+});
+</script>
+<script>
+	// Scroll Reveal
+	window.sr = ScrollReveal();
+	sr.reveal('.sr', {duration: 1500});
+</script>
+</body>
+</html>
